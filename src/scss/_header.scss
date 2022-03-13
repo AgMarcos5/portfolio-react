@@ -1,0 +1,24 @@
+header{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    color: #d7d7d7;
+    padding: 20px;
+
+    p{
+        margin-top: 20px;
+        font-size: #{"min(4vw,1.2em)"};
+        text-align: justify;
+    }
+    h1{
+        font-weight: 400;
+    }
+    b{
+        color: $green;
+    }
+    img{
+        max-width: 40px;
+        margin-left: 10px;
+    }
+
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Contacto from './components/Contacto';
+import Galeria from './components/Galeria';
+import Game from './components/Game';
+import Header from './components/Header';
+import Oblivion from './components/Oblivion';
+import Proyectos from './components/Proyectos';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Game/>
+      <Routes>
+        <Route path="/" />
+        <Route path="contacto" element={<Contacto/>} />
+        <Route path="proyectos" element={<Proyectos/>} />
+        <Route path="galeria" element={<Galeria/>} />
+        <Route path="oblivion" element={<Oblivion/>} />
+      </Routes>
     </div>
   );
 }

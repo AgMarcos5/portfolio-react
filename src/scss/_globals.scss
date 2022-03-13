@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  FONTS   */
+@font-face {
+  font-family: 'OfficeCodePro-Regular';
+  src: url('../fonts/OfficeCodePro-Regular.ttf');
+}
+@font-face {
+  font-family: 'OfficeCodePro-Bold';
+  src: url('../fonts/OfficeCodePro-Bold.ttf');
+}
+@font-face {
+  font-family: 'TabacGlamG';
+  src: url('../fonts/TabacGlamG4-Regular.otf');
+}
+
+
+body{
+    background: #111;
+    font-family: 'OfficeCodePro-Regular';
+    
+    color: #d7d7d7;
+}
+
+
+.separator{
+  height: 4px;
+  background: url('../img/separador.png') repeat-x;
+  margin: 0 auto;
+} 

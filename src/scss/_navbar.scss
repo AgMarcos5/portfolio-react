@@ -1,0 +1,113 @@
+.menu-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.menu{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    transition: 1s;
+    align-items: center;
+}
+
+.menu ul{
+    background: rgba(17, 17, 17, 0.79) !important;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    padding: 0 10px;
+}
+
+.menu li{
+    list-style-type: none;
+    max-width: 140px;
+    padding-left: 10px;
+    height: 29px;
+}
+
+.menu a{
+    font-family: 'OfficeCodePro-Regular';
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.menu a:hover {
+    color: $green;
+}
+
+
+.menu .dot {
+    position: relative;
+    left: -95px;
+    width: 8px;
+    height: 29px;
+    background: url(../img/list-icon.png);
+    opacity: 0;
+    -webkit-transform: translateY(-148px);
+    transform: translateY(-148px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin: 0 auto;
+    margin-bottom: -29px;
+}
+
+.menu li:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateY(-145px);
+    transform: translateY(-145px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.menu li:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateY(-120px);
+    transform: translateY(-120px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+.menu li:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateY(-90px);
+    transform: translateY(-90px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .menu li:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateY(-62px);
+    transform: translateY(-62px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .menu li:nth-child(5):hover ~ .dot {
+    -webkit-transform: translateY(-32px);
+    transform: translateY(-32px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
