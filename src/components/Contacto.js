@@ -1,6 +1,8 @@
 import avatar from "../img/sec-contacto/avatar.jpg"
 import Section from "./Section";
 
+import cv from "../cv.pdf"
+
 function ContactoLink ({href,value, d}) {
     return (
         <a href={href} target="_blank">
@@ -23,7 +25,7 @@ function Contacto () {
                 <div className="tabla">
                     <div className="avatar-container">
                         <img className="avatar" src={avatar} />
-                        <div><span className="cv"><a href="./src/cv.pdf" target="_blank">Descargar CV</a></span></div>
+                        <div><span className="cv"><a href={cv} target="_blank">Descargar CV</a></span></div>
                     </div>
                     <div className="footer-contact">
                         <ContactoLink href="https://www.linkedin.com/in/agueromarcos/" value="Linkedin"

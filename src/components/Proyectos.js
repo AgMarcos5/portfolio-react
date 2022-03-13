@@ -2,6 +2,10 @@ import Section from "./Section";
 import CodersRankActivity from '@codersrank/activity';
 
 import img_pokedex from "../img/sec-proyectos/pr_pokedex.jpg"
+import img_oblivion from "../img/sec-proyectos/pr_oblivion.jpg"
+import img_portfolio from "../img/sec-proyectos/pr_portfolio.jpg"
+import img_rps from "../img/sec-proyectos/pr_rps.jpg"
+import img_qrcode from "../img/sec-proyectos/pr_qrcode.jpg"
 
 
 window.customElements.define('codersrank-activity', CodersRankActivity);
@@ -18,7 +22,7 @@ function PrCard (props) {
                     <div className="pr-tags">
                         {props.tags}
                     </div>
-                    <div>
+                    <div className="links">
                         {props.links}
                     </div>
                 </div>
@@ -51,25 +55,27 @@ function Proyectos () {
                     <Tag name="Responsive Design"/>
                     </>}
                 links={<>
-                    <a href="https://agmarcos5.github.io/pokedex/" target="_blank">Ver proyecto</a> -  
-                    <a href="https://github.com/AgMarcos5/pokedex" target="_blank">github</a>
+                    <a href="https://agmarcos5.github.io/pokedex/" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/pokedex" target="_blank">Ver en github</a>
                     </>}
                 />
 
-                <PrCard title="Portfolio" 
+                <PrCard title="Rock - Paper - Scissors" 
                 description={
-                    <p>Este mismo sitio fue desarrollado utilizando html, css y javascript vanilla, incluyendo todo el apartado del videojuego.</p>
+                    <p>Challenge de frontend mentor. Clásico juego del piedra, papel o tijeras desarrollado en React.</p>
                     }
-                image={img_pokedex}
+                image={img_rps}
                 tags={<>
-                    <Tag name="HTML" color="ht"/> 
-                    <Tag name="CSS" color="cs"/> 
-                    <Tag name="Javascript" color="js"/>
+                    <Tag name="React" color="re"/> 
+                    <Tag name="Sass" color="sass"/> 
+                    <Tag name="Responsive Design"/>
                     </>}
                 links={<>
-                    <a href="https://github.com/AgMarcos5/portfolio" target="_blank">Ver en github</a>
+                    <a href="https://agmarcos5.github.io/challenge-rock-paper-scissors/" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/challenge-rock-paper-scissors" target="_blank">Ver en github</a>
                     </>}
                 />
+
 
                 <PrCard title="Oblivion 3000" 
                 description={
@@ -77,15 +83,48 @@ function Proyectos () {
                             Actualmente continúo el proyecto como trabajo final de la carrera.
                     </p>
                     }
-                image={img_pokedex}
+                image={img_oblivion}
                 tags={<>
                     <Tag name="Godot"/> 
                     <Tag name="GDScript"/> 
                     </>}
                 links={<>
+                    <a href="https://play.google.com/store/apps/details?id=org.godotengine.oblivion" className="demo" target="_blank">Google Play</a>   
                     <a href="https://github.com/AgMarcos5/Oblivion-3000" target="_blank">Ver en github</a>
                     </>}
                 />
+
+                <PrCard title="Portfolio" 
+                description={
+                    <p>Este mismo sitio fue desarrollado utilizando React</p>
+                    }
+                image={img_portfolio}
+                tags={<>
+                    <Tag name="React" color="re"/> 
+                    <Tag name="React router"/> 
+                    <Tag name="Canvas"/>
+                    </>}
+                links={<>
+                    <a href="https://github.com/AgMarcos5/portfolio-react" target="_blank">Ver en github</a>
+                    </>}
+                />
+
+
+                <PrCard title="QR Code" 
+                description={
+                    <p>Challenge de frontend mentor. Tarjeta de código QR.</p>
+                    }
+                image={img_qrcode}
+                tags={<>
+                    <Tag name="HTML" color="ht"/> 
+                    <Tag name="CSS" color="cs"/> 
+                    </>}
+                links={<>
+                    <a href="https://agmarcos5.github.io/challenge-qr-code/" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/challenge-qr-code" target="_blank">Ver en github</a>
+                   </>}
+                />
+
 
                 <div className="link">
                     <a href="https://github.com/AgMarcos5" target="_blank">
@@ -106,6 +145,7 @@ function Proyectos () {
                     <Tag name="HTML" color="ht"/>
                     <Tag name="CSS" color="cs"/>  
                     <Tag name="Javascript" color="js"/> 
+                    <Tag name="Sass" color="sass"/> 
                     <Tag name="Bootstrap"/> 
                     <Tag name="Godot"/>
                     <Tag name="GDScript"/>  
