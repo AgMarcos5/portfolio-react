@@ -16,3 +16,25 @@
     position: relative;
     display: block;
 }
+
+.game-rules{
+    margin-top: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    border: 1px solid #1e1e1e;
+    background: #151515;
+    opacity: 0.5;
+    transition: 1s;
+
+    &:hover{
+        opacity: 1;
+    }
+    img{
+        padding: 15px;
+        width: 95px;
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

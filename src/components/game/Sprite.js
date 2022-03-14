@@ -1,5 +1,8 @@
 import { utils } from "./utils";
 
+
+import shadow from "../../img/characters/shadow.png"
+
 export class Sprite{
     constructor(config){
         // Referencia del gameObject
@@ -16,7 +19,7 @@ export class Sprite{
         this.shadow = new Image();
         this.useShadow = true;
         if(this.useShadow){
-            this.shadow.src = "../img/characters/shadow.png"
+            this.shadow.src = shadow
         }
         this.shadow.onload = () => {
             this.isShadowLoaded = true;
