@@ -21,4 +21,26 @@ header{
         margin-left: 10px;
     }
 
+    &:hover .hand{
+        animation-name: slidein;
+        animation-duration: 0.5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        transform-origin: 50 100;
+    }
+
 }
+
+@keyframes slidein {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+  }

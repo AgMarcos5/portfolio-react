@@ -10,16 +10,31 @@ import img_game1 from "../img/sec-oblivion/game_1.jpg"
 import img_game2 from "../img/sec-oblivion/game_2.jpg"
 import img_game3 from "../img/sec-oblivion/game_3.jpg"
 
+import header_back from "../img/sec-oblivion/oblivion-header-back.jpg"
+import header_front from "../img/sec-oblivion/oblivion-header-front.png"
+import header_title from "../img/sec-oblivion/oblivion-header-title.png"
+
+import obbg from "../img/sec-oblivion/game_4.jpg"
+
+import { ParallaxBanner } from "react-scroll-parallax"
+
 function Oblivion () {
     return (
         <div className="info-container" id="secciones">
             <section id="oblivion-container">
-                <div className="oblivion-header">
-                    <div className="robot-container"><img id="robot" src={img_robot} alt="" /></div>
-                    <div className="oblivion-header-front"></div>
-                    <div className="oblivion-header-title"></div>
-                </div>
-               
+                    
+                
+
+                <ParallaxBanner
+                    layers={[
+                        { image: header_back, speed: -20, disabled: true },
+                        { image: header_title, speed: -5, translateY: [-30, -5] },
+                        { image: header_front, speed: -15, translateY: [-15, -5] },
+                    ]}
+                    className="banner-parallax"
+                >
+                <div className="robot-container"><img id="robot" src={img_robot} alt="" /></div>
+                </ParallaxBanner>
                
             <div className="oblivion-content">
                 <div className="container">
@@ -61,8 +76,14 @@ function Oblivion () {
                     </div>
                 </div>
             </div> 
-            
-            <div className="ob-bg"></div>
+    
+            <ParallaxBanner
+                    layers={[
+                        { image: obbg, speed: -10, translateY: [-20, 40]}
+                    ]}
+                    className="banner-parallax ob-bg"
+                >
+            </ParallaxBanner>
                 
             <div className="oblivion-content footer" data-aos="fade-up"  data-aos-duration="2000">
                 <div className="container">

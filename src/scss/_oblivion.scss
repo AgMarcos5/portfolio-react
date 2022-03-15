@@ -5,6 +5,15 @@
 }
 
 /*  HEADER  */  
+
+.banner-parallax{
+  height: 360px;
+  div{
+    background-size: initial !important;
+    background-repeat: no-repeat;
+  }
+}
+
 .oblivion-header{
     background-image: url(../img/sec-oblivion/oblivion-header-back.jpg);
     background-repeat: repeat-x;
