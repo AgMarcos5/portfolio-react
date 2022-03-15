@@ -1,0 +1,361 @@
+/*  OBLIVION    */
+#oblivion-container{
+    font-family: 'Times New Roman', Times, serif;
+    background: #111;
+}
+
+/*  HEADER  */  
+.oblivion-header{
+    background-image: url(../img/sec-oblivion/oblivion-header-back.jpg);
+    background-repeat: repeat-x;
+    position: relative;
+    width: 100%;
+    height: 368px;
+    background-position: center;
+    transition: 1s;
+    pointer-events:none;
+}
+
+.oblivion-header-front{
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: url(../img/sec-oblivion/oblivion-header-front.png);
+    top: -100px;
+    background-position: center;
+    transition: 1s;
+    z-index: 1;
+}
+
+.oblivion-header-title{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-image: url(../img/sec-oblivion/oblivion-header-title.png);
+  background-repeat: no-repeat;
+  top: -87px;
+  left: -160px;
+  background-position: center;
+  transition: 1s;
+  z-index: 0;
+}
+
+.oblivion-header .robot-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: inherit;
+    height: 100px;
+    
+}
+
+.oblivion-header #robot {
+    position: absolute;
+    right: -76px;
+    top: -190px;
+    transition: 1s;
+    z-index: 2;
+}
+
+@media(max-width:1170px){
+  #robot{
+    right: -40px !important;
+  }
+}
+
+@media(max-width:1100px){
+  #robot{
+    right: 0px !important;
+  }
+}
+
+@media(max-width:990px){
+  #robot{
+    display: none;
+  }
+}
+
+@media(max-width:829px){
+  #robot{
+    display: none;
+  }
+  .oblivion-header-title {
+    top: 30px;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    max-width: 469px;
+    max-height: 151px;
+  }
+}
+
+/*  CONTENT */
+
+.oblivion-content{
+  background: #151515;
+}
+
+.oblivion-content .container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .column-70 {
+    float: left;
+    width: 70%;
+    padding: 20px;
+  }
+  #oblivion-container .column-70 h2{
+    text-align: right;
+    font-style: italic;
+  }
+  #oblivion-container .column-70 span{
+      font-style: normal;
+  }
+  
+  /* 1/3 column */
+  .column-20 {
+    float: left;
+    width: 20%;
+    padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-70,
+    .column-20 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+  /*    Articulo    */
+.oblivion-content{
+  .frase h1 {
+    margin: 35px 0;
+    font-family: "TabacGlamG";
+    color: #dcdcde;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    border-bottom: 1px solid #54565e;
+  }
+}
+
+
+  .oblivion-content article {
+    text-align: justify;
+    font-size: 1.15em;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 1s;
+    line-height: 1.5em;
+    font-family: "TabacGlamG";
+    font-weight: 100;
+    letter-spacing: 0.17em;
+}
+
+.oblivion-content article .logos{
+  text-align: center;
+}
+.oblivion-content article .logos img{
+  max-width: 200px;
+}
+
+.oblivion-content a{
+  color: white;
+  transition: 1s;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 3px; 
+  margin: 0 10px;
+}
+.oblivion-content a:hover{
+  color: #ddb97e;
+}
+
+
+article.abrir{
+    max-height: 700px;
+    
+    transition: 1s;
+}
+
+.show-more{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*  NOTICIA */
+.noticia {
+  display: flex;
+  line-height: 1.2;
+  border: 1px solid #54565e;
+    background: #111;
+    color: #232323;
+    padding: 5px;
+    transition: 1s;
+}
+
+.noticia:hover{
+  background: rgb(10, 10, 10);
+}
+
+.noticia .noticia_img {
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+  width: 30%;
+  max-width: 200px;
+}
+
+.noticia .noticia_img img {
+  width: 100%;
+}
+
+.noticia .noticia_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 5px;
+  font-family: "TabacGlamG";
+  font-weight: 100;
+  letter-spacing: 0.17em;
+  width: 70%;
+}
+
+.noticia .noticia_text a {
+  text-decoration: none;
+  color: #d2d2d2;
+  border-bottom: 0;
+  line-height: 2em;
+}
+
+.noticia .noticia_text a h3 {
+  padding-bottom: 7px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.noticia .noticia_text a p {
+  text-align: right;
+  color: #9f9f9f;
+  font-size: 0.7em;
+}
+
+
+/*  ANIMACION   */
+.mostrar .oblivion-header div #robot {
+    top: -245px;
+}
+
+.mostrar .oblivion-header{
+    top: 0px;
+}
+
+.mostrar .oblivion-header-front{
+    top: -100px;
+}
+
+
+/*  Fondo 2022 */
+  
+.blur{
+  background: rgba(17,17,17,0.9) !important;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+.ob-bg{
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/sec-oblivion/game_4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+  
+  background-position-x: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.oblivion-content.footer{
+  background:transparent;
+}
+
+
+.frase span{
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+
+/*  GALLERY */
+.oblivion-gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: "TabacGlamG";
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+  overflow: hidden;
+  
+  p {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width:1030px){
+  .oblivion-content .container {
+    padding: 20px;
+  }
+  .oblivion-gallery{
+    padding: 24px;
+  }
+}
+
+.oblivion-gallery div{
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  
+}
+
+@media (max-width:860px){
+  .oblivion-gallery div {
+    flex-direction: column;
+  }
+  .oblivion-gallery img{
+    padding: 10px 0 !important;
+  }
+}
+
+.oblivion-gallery img{
+  max-width: 400px;
+}
+
+.img-gal{
+  padding: 10px;
+}
