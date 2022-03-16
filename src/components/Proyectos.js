@@ -6,6 +6,7 @@ import img_oblivion from "../img/sec-proyectos/pr_oblivion.jpg"
 import img_portfolio from "../img/sec-proyectos/pr_portfolio.jpg"
 import img_rps from "../img/sec-proyectos/pr_rps.jpg"
 import img_qrcode from "../img/sec-proyectos/pr_qrcode.jpg"
+import { useEffect } from "react";
 
 
 window.customElements.define('codersrank-activity', CodersRankActivity);
@@ -39,7 +40,9 @@ function Tag({name,color}){
 
 
 
-function Proyectos () {
+function Proyectos (props) {
+    
+    useEffect(props.executeScroll,[])
     return (
         <div>
             <Section title="Proyectos">

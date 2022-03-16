@@ -2,6 +2,7 @@ import avatar from "../img/sec-contacto/avatar.jpg"
 import Section from "./Section";
 
 import cv from "../cv.pdf"
+import { useEffect } from "react";
 
 function ContactoLink ({href,value, d}) {
     return (
@@ -19,7 +20,10 @@ function ContactoLink ({href,value, d}) {
     )
 }
 
-function Contacto () {
+function Contacto (props) {
+    
+    useEffect(props.executeScroll,[])
+    
     return (
         <Section title="Contacto">
                 <div className="tabla">

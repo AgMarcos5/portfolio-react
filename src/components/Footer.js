@@ -6,9 +6,9 @@ function Footer () {
         <section className="section-container">
             <div className="container">
                 <p className="game-rules">Descubre mi portafolio jugando. Utiliza
-                <img src={keys1} class="keys"/>
+                <img src={keys1} className="keys"/>
                 o
-                <img src={keys2} class="keys"/>
+                <img src={keys2} className="keys"/>
                 para moverte.
                 </p>
             </div>

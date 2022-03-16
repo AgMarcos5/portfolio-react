@@ -6,9 +6,12 @@ import img_3 from "../img/sec-galeria/3.jpg"
 import img_4 from "../img/sec-galeria/4.jpg"
 import img_5 from "../img/sec-galeria/5.jpg"
 import { ParallaxBanner } from "react-scroll-parallax"
+import { useEffect } from "react"
 
 
-function Galeria () {
+function Galeria (props) {
+    
+    useEffect(props.executeScroll,[])
     return (
         <section className="section-container">
             <div className="container">

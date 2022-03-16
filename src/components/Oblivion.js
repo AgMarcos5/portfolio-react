@@ -17,8 +17,10 @@ import header_title from "../img/sec-oblivion/oblivion-header-title.png"
 import obbg from "../img/sec-oblivion/game_4.jpg"
 
 import { ParallaxBanner } from "react-scroll-parallax"
+import { useEffect } from "react"
 
-function Oblivion () {
+function Oblivion (props) {
+    useEffect(props.executeScroll,[])
     return (
         <div className="info-container" id="secciones">
             <section id="oblivion-container">
