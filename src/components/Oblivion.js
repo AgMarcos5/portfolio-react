@@ -16,11 +16,12 @@ import header_title from "../img/sec-oblivion/oblivion-header-title.png"
 
 import obbg from "../img/sec-oblivion/game_4.jpg"
 
-import { ParallaxBanner } from "react-scroll-parallax"
+import { Parallax, ParallaxBanner } from "react-scroll-parallax"
 import { useEffect } from "react"
 
 function Oblivion (props) {
     useEffect(props.executeScroll,[])
+
     return (
         <div className="info-container" id="secciones">
             <section id="oblivion-container">
@@ -35,7 +36,6 @@ function Oblivion (props) {
                     ]}
                     className="banner-parallax"
                 >
-                <div className="robot-container"><img id="robot" src={img_robot} alt="" /></div>
                 </ParallaxBanner>
                
             <div className="oblivion-content">
@@ -52,8 +52,8 @@ function Oblivion (props) {
                                     <img src={logo_godot} />
                                     <img src={logo_unmdp} />
                                 </div>
+                                
                         </article>
-
                         <div className="noticia">
                             <div className="noticia_img"><img src={img_noticia1} alt="piazzolla" /></div>
                             <div className="noticia_text"><a
@@ -74,7 +74,7 @@ function Oblivion (props) {
                             </div>
                         </div>
                         <br/>
-
+                        
                     </div>
                 </div>
             </div> 
