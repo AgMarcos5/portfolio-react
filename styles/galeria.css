@@ -1,0 +1,99 @@
+.video-wrapper {
+    max-width: 1000px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000px;
+    opacity: .2;
+    object-position: 0 -700px;
+    transition: 1s;
+}
+
+
+
+.gal-title{
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+.gal-title h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 3em;
+    font-family: "TabacGlamG";
+    letter-spacing: 0.2em;
+    transition: 1s;
+}
+
+.video-wrapper:hover .gal-title h1{
+    transform: translateY(15%);
+}
+
+
+
+
+
+
+
+.img-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*  GALERIA */  
+.row {
+    display: flex;
+    padding: 0px 4px;
+}
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 1 1 49%;
+    max-width: 49%;
+    padding: 0 20px;
+}
+  
+.img-container img {
+    vertical-align: middle;
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.img-container img:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+    overflow: hidden;
+    margin: 10px 0;
+    border: 2px solid #2c2c2c;
+}
+
+
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+  }

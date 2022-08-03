@@ -1,0 +1,129 @@
+#proyectos-container h1 {
+    font-style: normal;
+    font-family: "OfficeCodePro-Regular";
+    border: 0;
+    margin-bottom: 10px;
+    color: #dcdcde;
+    background: -webkit-linear-gradient( #888888, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    transition: 1s;
+}
+
+#proyectos-container .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "OfficeCodePro-Regular";
+}
+
+
+
+/*  Tabla proyectos */
+.pr-element {
+    margin: 10px;
+    border: 2px solid #2C2C2F;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: default;
+}
+
+.pr-element:hover{
+    border-color: #6d6d72;
+    background: #0f0f0f;
+}
+
+.pr-image{
+    height: auto;
+    width: 15%;
+    background: #181818;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pr-info {
+    width: 85%;
+    padding-left: 10px;
+}
+
+.pr-tags{
+    max-width: 300px;
+    line-height: 2em;
+    padding-right: 5px;
+}
+
+.pr-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #2C2C2F;
+    padding: 5px;
+}
+
+@media(max-width:490px){
+    .pr-footer {
+        flex-direction: column;
+    }
+}
+
+.pr-element .pr-footer a{
+    font-size: .7em;
+}
+
+.pr-element a{
+    text-decoration: none;
+    color: white;
+}
+
+.tag{
+    background: #2c2c2c;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    opacity: .5;
+}
+.tag:hover{
+    background: #404040;
+    opacity: 1;
+}
+
+
+.tag.ht{
+    background: #b72727;
+}
+.tag.cs{
+    background: #2e49d1;
+}
+.tag.js{
+    background: #c5a50c;
+    color: black;
+}
+.tag.re{
+    background: #61dafb;
+    color: black;
+}
+.tag.nd{
+    background: #83cd29;
+    color: black;
+}
+
+
+.tec{
+    line-height: 2em;
+    text-align: center;
+    margin: 30px;
+}
+
+
+.link{
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color:wheat;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://agmarcos5.github.io/img/prev.jpg" />
+    <meta property="og:title" content="Marcos Agüero - Portfolio" />
+    <meta property="og:description" content="Soy estudiante avanzado de ingeniería informática en la UNMDP y me desempeño como ilustrador freelance.
+    Con el objetivo de capacitarme al máximo sobre el front end y desarrollo de videojuegos, áreas que realmente 
+    me apasionan y donde puedo integrar mis conocimientos tanto de arte como de programación." />
+    <title>Marcos Agüero - Portfolio</title>
+    <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
+    <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    <link href="./styles/oblivion.css" type="text/css" rel="stylesheet">
+    <link href="./styles/proyectos.css" type="text/css" rel="stylesheet">
+    <link href="./styles/contacto.css" type="text/css" rel="stylesheet">
+    <link href="./styles/galeria.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="inicio">
+        <h1 data-aos="zoom-in">¡Hola! 
+            <img src="./img/hand.png" class="hand"/>
+        </br> Mi nombre es <b>Marcos Agüero</b>.</h1>
+
+        <h2>Soy estudiante avanzado de ingeniería informática en la UNMDP y me desempeño como ilustrador freelance.
+            Con el objetivo de capacitarme al máximo sobre el front end y desarrollo de videojuegos, áreas que realmente 
+            me apasionan y donde puedo integrar mis conocimientos tanto de arte como de programación.
+        </h2>
+
+        <div class="separator"></div>
+
+        <nav class="menu" id="game-navbar">
+            <ul>
+              <li><a href="#" id="inicio" class="to-top" tabindex="1"><img src="./img/nav_home.png"/><span>Inicio</span></a></li>
+              <li><a href="#game" id="oblivion" tabindex="2"><img src="./img/nav_3000.png"/><span>Oblivion 3000</span></a></li>
+              <li><a href="#game" id="proyectos" tabindex="3"><img src="./img/nav_doc.png"/><span>Proyectos</span></a></li>
+              <li><a href="#game" id="galeria" tabindex="4"><img src="./img/nav_gal.png"/><span>Galería</span></a></li>
+              <li><a href="#game" id="contacto" tabindex="5"><img src="./img/nav_contact.png"/><span>Contacto</span></a></li>
+              <div class="dot"></div>
+            </ul>
+            
+        </nav>
+
+        <div class="separator"></div>
+
+        <h3 id="game">Descubre mi portafolio jugando. Utiliza
+            <img src="./img/keys1.png" class="keys"/>
+            o
+            <img src="./img/keys2.png" class="keys"/>
+            para moverte.
+        </h3>
+    </header>
+
+
+    <div class="game-container" >
+        <canvas class="game-canvas" width="400" height="200"></canvas>
+        <div class="scroll-secciones"><a href="#secciones"><img src="./img/up.png"></a></div>
+    </div>
+
+
+    <div class="info-container" id="secciones">
+        <section id="oblivion-container">
+
+            <div class="oblivion-header">
+                <div class="robot-container"><img id="robot" src="./img/sec-oblivion/robot.png" alt="" /></div>
+                <div class="oblivion-header-front" style="top: -100px"></div>
+                <div class="oblivion-header-title"></div>
+                
+            </div>
+
+            <div class="oblivion-content">
+                <div class="container">
+                    <div data-aos="fade-up"> 
+                        <article>
+                            <p>Oblivion 3000 es un videojuego en desarrollo para dispositivos móviles, con lanzamiento previsto para el año 2022.
+                                Su primer versión, realizada por <a href="https://www.linkedin.com/in/agueromarcos/"  target="_blank">Marcos Agüero</a>, 
+                                <a href="https://www.linkedin.com/in/agustina-pieroni-41a1aa221/" target="_blank">Agustina Pieroni</a> y 
+                                <a href="https://www.linkedin.com/in/lautaro-echeverria/" target="_blank">Lautaro Echeverría</a>, 
+                                se encuentra disponible en 
+                                <a href="https://play.google.com/store/apps/details?id=org.godotengine.oblivion" target="_blank">google play</a>.</p>   
+                                <div class="logos">
+                                    <img src="./img/sec-oblivion/godot.png" />
+                                    <img src="./img/sec-oblivion/unmdp.png" />
+                                </div>
+                        </article>
+
+                        <div class="noticia">
+                            <div class="noticia_img"><img src="./img/sec-oblivion/noticia1.jpg" alt="piazzolla"></div>
+                            <div class="noticia_text"><a
+                                    href="https://www.lacapitalmdp.com/oblivion-3000-el-videojuego-que-fusiona-una-mar-del-plata-distopica-y-la-musica-de-piazzolla/" target="_blank">
+                                    <h3>Oblivion 3000, el videojuego que fusiona una Mar del Plata distópica y la música de Piazzolla</h3>
+                                    <p>Diario La Capital - 14 de septiembre de 2021 </p>
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="noticia">
+                            <div class="noticia_img"><img src="./img/sec-oblivion/noticia2.jpg" alt="piazzolla"></div>
+                            <div class="noticia_text"><a
+                                    href="https://www.lacapitalmdp.com/piazzolla-y-la-identidad-en-forma-de-videojuego/" target="_blank">
+                                    <h3>Piazzolla y la identidad en forma de videojuego</h3>
+                                    <p>Diario La Capital - 6 de noviembre de 2021 </p>
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="ob-bg"></div>
+                
+            <div class="oblivion-content footer" data-aos="fade-up"  data-aos-duration="2000">
+                <div class="container">
+                    <span class="frase">
+                        <h1>“Tengo una ilusión: que mi obra se escuche en el 2020. </br>Y en el 3000 también.”</br><span>Astor Piazzolla.</span></h1>
+                    </span>
+                </div>
+            </div>
+            <div class="oblivion-gallery" data-aos="fade-up"  data-aos-duration="3000">
+                <p> Corre el año 3000 y la humanidad ya no es la misma. Parece ser que un milenio es todo el tiempo que se necesita para olvidar. Entre tanto desperdicio, contaminación y vida artificial, poco prevalece de la realidad que alguna vez conocimos. Como por ejemplo el basural. </p>                     
+                <div>
+                    <img class="img-gal" src="./img/sec-oblivion/game_1.jpg" data-aos="zoom-in-right" style="padding-right: 70px;"/>
+                    <span>Robot lo prefiere así. Es que hace ya un tiempo pasa sus tardes entre los desechos, tratando de encontrar algo que lo ayude a sentir. No entiende porqué pero cada objeto inanimado del pasado lo llena de curiosidad, con la certeza de saber que algo más existió. Una tarde, con la poca luz que quedaba antes del anochecer, hurgó hasta la base de una de las montañas más altas y antiguas de basura. Resulta casi imposible de explicar pero creo que si le preguntan, él tampoco sabe porqué una valija mal conservada llamó su atención. Empujó un poco la chatarra que la mantenía cautiva y la arrastró hasta el poste de luz más cercano.</span>     
+                </div>
+                <div>
+                    <p>La dificultad con la que se deslizaba el cierre le dió la pauta de la antigüedad de la pieza con la que se había cruzado. Sin dudarlo un segundo, se arrodilló y abrió la valija. Deslumbrado, pasó sus dedos por las dos reliquias que se escondían allí: Oblivion decía la caja. Entonces la tomó entre sus manos y sacó un gran círculo negro de adentro. Lo miró, lo movió y lo giró hasta que distinguió un pequeño agujero en el centro. En el momento exacto en que uno de sus dedos hizo contacto, comenzó a dar vueltas y una melodía salió de él.</p>
+                    <img class="img-gal"  src="./img/sec-oblivion/game_2.jpg" data-aos="zoom-in-left" style="padding-left: 70px;"/>
+                </div>
+                <div>
+                    <img class="img-gal"  src="./img/sec-oblivion/game_3.jpg" data-aos="zoom-in-right" style="padding-right: 70px;"/>
+                    <p>Sensaciones que nunca supo que hubieran existido lo atravesaron por completo. El vacío en su interior se hizo más notorio aunque amalgamado por la nostalgia y la esperanza, las emociones fueron tales que tuvo que dejarse llevar por los minutos que duró la pieza. Y luego, el vacío nuevamente. Pero esta vez cargado del recuerdo de las emociones que pudo sentir. Robot se quedó congelado por un momento, hasta que volvió a hacer girar el disco. No podía creer que el resto de la humanidad se estuviera perdiendo de sentir así. Tenía que hacer algo.</p>
+                </div>     
+            </div>
+            <div class="b-up"><a href="#game"><img src="./img/up.png"/></a></div>
+        </section>
+
+        <section id="proyectos-container">
+            <div class="container">
+                <span class="frase"><h1>Proyectos</h1></span>
+                <div class="separator" style="max-width: 100%;"></div>
+                <br>
+
+                <div class="pr-element">
+                    <div class="pr-image" style="background-image: url(./img/sec-proyectos/pr_pokedex.jpg);"></div>
+                    <div class="pr-info">
+                        <h2>Pokedex</h2>
+                        <p>Pokedex desarrollada utilizando React.Js y consumiendo la API de <a href="https://pokeapi.co">pokeapi.co</a></p>
+                        <div class="pr-footer">
+                            <div class="pr-tags">
+                                <span class="tag re">React</span> <span class="tag">Api</span> <span class="tag">Responsive Design</span>
+                            </div>
+                            <div><a href="https://agmarcos5.github.io/pokedex/" target="_blank">Ver proyecto</a> -  
+                                <a href="https://github.com/AgMarcos5/pokedex" target="_blank">github</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pr-element">
+                    <div class="pr-image" style="background-image: url(./img/sec-proyectos/pr_portfolio.jpg);"></div>
+                    <div class="pr-info">
+                        <h2>Portfolio</h2>
+                        <p>Este mismo sitio fue desarrollado utilizando html, css y javascript vanilla, incluyendo todo el apartado del videojuego.</p>
+                        <div class="pr-footer">
+                            <div class="pr-tags">
+                                <span class="tag ht">HTML</span> <span class="tag cs">CSS</span> <span class="tag js">Javascript</span>
+                            </div>
+                            <div><a href="https://github.com/AgMarcos5/portfolio" target="_blank">Ver en github</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pr-element">
+                    <div class="pr-image"  style="background-image: url(./img/sec-proyectos/pr_oblivion.jpg);"></div>
+                    <div class="pr-info">
+                        <h2>Oblivion 3000</h2>
+                        <p>Videojuego desarrollado para la cátedra de ingeniería de videojuegos en la UNMDP, utilizando el motor de Godot. 
+                            Actualmente continúo el proyecto como trabajo final de la carrera.
+                        </p>
+                        <div class="pr-footer">
+                            <div class="pr-tags">
+                                <span class="tag">Godot</span> <span class="tag">GDScript</span>
+                            </div>
+                            <div><a href="https://github.com/AgMarcos5/Oblivion-3000" target="_blank">Ver en github</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="link">
+                    <a href="https://github.com/AgMarcos5" target="_blank">
+                        Ver más en 
+                        <span class="icon-fondo">
+                            <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+                            </svg>
+                        </span>
+                        <span>/AgMarcos5 </span>
+                    </a>
+                </div>
+
+                <div class="tec">
+                    <h3>
+                        Algunos de los lenguajes de programación, herramientas y otras tecnologías con las que he tenido contacto y continúo aprendiendo: 
+                    </h3>
+                    <span class="tag ht">HTML</span> <span class="tag cs">CSS</span> <span class="tag js">Javascript</span> <span class="tag">Bootstrap</span> 
+                    <span class="tag">Godot</span> <span class="tag">GDScript</span> <span class="tag">Unity</span> 
+                    <span class="tag re">React.js</span> <span class="tag nd">Node.Js</span> <span class="tag">Express.Js</span> 
+                    <span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Java</span> 
+                    <span class="tag">Photoshop</span> <span class="tag">Clip Studio Paint</span> <span class="tag">Aseprite</span> 
+                    <span class="tag">Git</span> <span class="tag">GitHub</span> <span class="tag">MySql</span> 
+                    <span class="tag">Oracle DB</span> 
+
+                </div>
+                
+                <br>
+                <codersrank-activity  class="github_act" username="agmarcos5" legend="false" labels tooltip step="5" ></codersrank-activity>
+                <br>
+                <div class="b-up"><a href="#game"><img src="./img/up.png"/></a></div>
+            </div>
+        </section>
+
+        <section id="galeria-container">
+
+            <!--Header-->
+            <div class="video-wrapper">
+                <video playsinline autoplay muted loop>
+                  <source src="./img/sec-galeria/video.mp4" type="video/webm">
+                </video>
+                <div class="gal-title">
+                    <h1>Galería</h1>
+                </div>
+            </div>
+            
+            <!--Galería-->
+            <div class="img-container">
+                <div class="row">
+                    <div class="column">
+                        <figure><img src="./img/sec-galeria/1.jpg"></figure>
+                        <figure> <img src="./img/sec-galeria/3.jpg"></figure>
+                    </div>
+                    <div class="column">
+                        <figure><img src="./img/sec-galeria/2.jpg"></figure>
+                        <figure><img src="./img/sec-galeria/4.jpg"></figure>
+                    </div>
+                </div>
+                <figure><img src="./img/sec-galeria/5.jpg"></figure>
+            </div>
+            </br>
+
+
+            <div class="b-up"><a href="#game"><img src="./img/up.png"/></a></div>
+
+
+           
+
+        </section>
+
+        <section id="contacto-container">
+            <div class="container">
+                <span class="frase"><h1>Contacto</h1></span>
+                <div class="separator" style="max-width: 100%;"></div>
+                <br>
+                <div class="tabla">
+                    <div class="avatar-container">
+                        <img class="avatar" src="./img/sec-contacto/avatar.jpg" >
+                        <div><span class="cv"><a href="./src/cv.pdf" target="_blank">Descargar CV</a></span></div>
+                    </div>
+                    <div class="footer-contact">
+                        
+                        <a href="mailto:aguermar@gmail.com">
+                            <span class="icon-fondo">
+                                <svg class="MuiSvgIcon-root" focusable="false"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span>aguermar@gmail.com</span>
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/agueromarcos/"  target="_blank">
+                            <span class="icon-fondo">
+                            <svg class="MuiSvgIcon-root" focusable="false"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                                </path>
+                            </svg>
+                            </span>
+                            <span>Linkedin</span>
+                        </a>
+                        <a href="https://github.com/AgMarcos5" target="_blank">
+                            <span class="icon-fondo">
+                                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+                                </svg>
+                            </span>
+                            <span>Github AgMarcos5 </span>
+                        </a>
+                        <a href="https://www.instagram.com/temdi.5" target="_blank">
+                            <span class="icon-fondo">
+                            <svg class="MuiSvgIcon-root" focusable="false"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                </path>
+                            </svg>
+                            </span>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://twitter.com/Temdi5" target="_blank">
+                            <span class="icon-fondo">
+                            <svg class="MuiSvgIcon-root" focusable="false"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+                                </path>
+                            </svg>
+                            </span>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <br>
+                <codersrank-activity  class="github_act" username="agmarcos5" legend="false" labels tooltip step="5" ></codersrank-activity>
+                
+                <br>    
+                <div class="separator"></div><br>
+            </div>
+            <div class="b-up"><a href="#game"><img src="./img/up.png"/></a></div>
+        </section>
+    </div>
+    <footer></footer>
+    
+    
+    <script src="https://unpkg.com/@codersrank/activity@x.x.x/codersrank-activity.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/sections.js"></script>
+    <script src="./js/DirectionInput.js"></script>
+    <script src="./js/Overworld.js"></script>
+    <script src="./js/Sprite.js"></script>
+    <script src="./js/GameObject.js"></script>
+    <script src="./js/Person.js"></script>
+    <script src="./js/OverworldMap.js"></script>
+    <script src="./js/init.js"></script>
+
+</body>
+</html>

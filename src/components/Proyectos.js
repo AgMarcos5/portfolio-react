@@ -6,6 +6,7 @@ import img_oblivion from "../img/sec-proyectos/pr_oblivion.jpg"
 import img_portfolio from "../img/sec-proyectos/pr_portfolio.jpg"
 import img_rps from "../img/sec-proyectos/pr_rps.jpg"
 import img_qrcode from "../img/sec-proyectos/pr_qrcode.jpg"
+import img_aerolab from "../img/sec-proyectos/pr_aerolab.jpg"
 import { useEffect } from "react";
 
 
@@ -47,9 +48,26 @@ function Proyectos (props) {
         <div>
             <Section title="Proyectos">
                 
+                <PrCard title="Aerolab challenge" 
+                description={
+                    <p>Catálogo de productos utilizando Next.js  <a href="https://github.com/Aerolab/frontend-developer-coding-challenge" target="_blank">(ver challenge)</a></p>
+                    }
+                image={img_aerolab}
+                tags={<>
+                    <Tag name="Next.js" color="re"/> 
+                    <Tag name="Api"/> 
+                    <Tag name="Responsive Design"/>
+                    <Tag name="Styled JSX"/>
+                    </>}
+                links={<>
+                    <a href="https://aerolab-frontend-challenge-xi.vercel.app" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/aerolab-frontend-challenge" target="_blank">Ver en github</a>
+                    </>}
+                />
+
                 <PrCard title="Pokedex" 
                 description={
-                    <p>Pokedex desarrollada utilizando React.Js y consumiendo la API de <a href="https://pokeapi.co">pokeapi.co</a></p>
+                    <p>Pokedex desarrollada utilizando React.Js y consumiendo la API de <a href="https://pokeapi.co" target="_blank">pokeapi.co</a></p>
                     }
                 image={img_pokedex}
                 tags={<>
@@ -154,6 +172,7 @@ function Proyectos (props) {
                     <Tag name="GDScript"/>  
                     <Tag name="Unity"/>
                     <Tag name="React.js" color="re"/>
+                    <Tag name="Next.js" color="re"/>
                     <Tag name="Node.js" color="nd"/>
                     <Tag name="Express.js"/>
                     <Tag name="C"/>
