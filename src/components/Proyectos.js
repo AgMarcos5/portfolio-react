@@ -73,7 +73,7 @@ function Proyectos (props) {
                     <Tag name="Responsive Design"/>
                     </>}
                 links={<>
-                    <a href="https://agmarcos5.github.io/pokedex/" className="demo" target="_blank">Demo</a>   
+                    <a href="https://pokedex-agmarcos5.vercel.app" className="demo" target="_blank">Demo</a>   
                     <a href="https://github.com/AgMarcos5/pokedex" target="_blank">Ver en github</a>
                     </>}
                 />
@@ -89,7 +89,7 @@ function Proyectos (props) {
                     <Tag name="Responsive Design"/>
                     </>}
                 links={<>
-                    <a href="https://agmarcos5.github.io/challenge-rock-paper-scissors/" className="demo" target="_blank">Demo</a>   
+                    <a href="https://challenge-rock-paper-scissors-eight.vercel.app" className="demo" target="_blank">Demo</a>   
                     <a href="https://github.com/AgMarcos5/challenge-rock-paper-scissors" target="_blank">Ver en github</a>
                     </>}
                 />
