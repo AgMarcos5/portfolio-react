@@ -1,37 +1,15 @@
 import Section from "./Section";
-import CodersRankActivity from '@codersrank/activity';
 
-import img_pokedex from "../img/sec-proyectos/pr_pokedex.jpg"
-import img_oblivion from "../img/sec-proyectos/pr_oblivion.jpg"
-import img_portfolio from "../img/sec-proyectos/pr_portfolio.jpg"
-import img_rps from "../img/sec-proyectos/pr_rps.jpg"
-import img_qrcode from "../img/sec-proyectos/pr_qrcode.jpg"
-import img_aerolab from "../img/sec-proyectos/pr_aerolab.jpg"
+import img_pokedex from "../img/sec-proyectos/pokedex.jpg"
+import img_oblivion from "../img/sec-proyectos/oblivion.jpg"
+import img_portfolio from "../img/sec-proyectos/portfolio.jpg"
+import img_rps from "../img/sec-proyectos/ppt.jpg"
+import img_gifapp from "../img/sec-proyectos/gifapp.jpg"
+import img_aerolab from "../img/sec-proyectos/aerolab.jpg"
 import { useEffect } from "react";
+import { PrCard } from "./proyectos/PrCard";
 
 
-window.customElements.define('codersrank-activity', CodersRankActivity);
-
-function PrCard (props) {
-    return (
-        <div className="pr-element">
-            <div className="pr-image" style={{ backgroundImage: `url(${props.image})` }}>
-            </div>
-            <div className="pr-info">
-                <h2>{props.title}</h2>
-                {props.description}
-                <div className="pr-footer">
-                    <div className="pr-tags">
-                        {props.tags}
-                    </div>
-                    <div className="links">
-                        {props.links}
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 function Tag({name,color}){
     return (
@@ -47,6 +25,25 @@ function Proyectos (props) {
     return (
         <div>
             <Section title="Proyectos">
+
+            
+                <PrCard title="Gif App" 
+                description={
+                    <p>Sitio de búsqueda de gifs, con la posibilidad de guardar en favoritos aquellos gifs que más te gusten.</p>
+                    }
+                image={img_gifapp}
+                tags={<>
+                    <Tag name="React" color="re"/>
+                    <Tag name="Sass" color="sass"/>
+                    <Tag name="Api"/> 
+                    <Tag name="React Context"/> 
+                    <Tag name="React Router"/> 
+                    </>}
+                links={<>
+                    <a href="https://gifapp-psi.vercel.app" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/gifapp" target="_blank">Ver en github</a>
+                   </>}
+                />
                 
                 <PrCard title="Aerolab challenge" 
                 description={
@@ -131,22 +128,6 @@ function Proyectos (props) {
                 />
 
 
-                <PrCard title="QR Code" 
-                description={
-                    <p>Challenge de frontend mentor. Tarjeta de código QR.</p>
-                    }
-                image={img_qrcode}
-                tags={<>
-                    <Tag name="HTML" color="ht"/> 
-                    <Tag name="CSS" color="cs"/> 
-                    </>}
-                links={<>
-                    <a href="https://agmarcos5.github.io/challenge-qr-code/" className="demo" target="_blank">Demo</a>   
-                    <a href="https://github.com/AgMarcos5/challenge-qr-code" target="_blank">Ver en github</a>
-                   </>}
-                />
-
-
                 <div className="link">
                     <a href="https://github.com/AgMarcos5" target="_blank">
                         Ver más en 
@@ -186,10 +167,6 @@ function Proyectos (props) {
                     <Tag name="MySql"/>
                     <Tag name="Oracle DB"/>    
                 </div>
-
-                <br/>
-                <codersrank-activity  className="github_act" username="agmarcos5" legend="false" labels tooltip step="5" ></codersrank-activity>
-                <br/>
 
             </Section>
         </div>

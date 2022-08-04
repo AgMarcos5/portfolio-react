@@ -3,7 +3,7 @@
     border: 2px solid #2C2C2F;
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 5px;
     transition: 1s;
     align-items: center;
@@ -17,7 +17,7 @@
 
 .pr-image{
     height: 155px;
-    width: 15%;
+    width: 100%;
     background: #181818;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,7 +41,6 @@
 }
 
 .pr-tags{
-    max-width: 300px;
     line-height: 2em;
     padding-right: 5px;
 }
@@ -61,7 +60,10 @@
 
     .links{
         text-align: center;
-        padding-top: 5px; 
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

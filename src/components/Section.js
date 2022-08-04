@@ -8,9 +8,7 @@ function Section (props) {
                 <div className="separator"></div>
                 <br/>
                 {props.children}
-                <br/>  
-                <div className="separator"></div>
-                <br/>  
+                <br/>
             </div>
         </section>
     )
