@@ -22,13 +22,12 @@ export class DirectionInput {
 
     init(){
         document.addEventListener("keydown", e =>{
-
             if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
                 e.preventDefault();
             }
-
             const dir = this.map[e.code];
             if(dir && this.heldDirections.indexOf(dir) === -1){
+                
                 this.heldDirections.unshift(dir);
             }
         });

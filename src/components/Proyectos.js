@@ -6,6 +6,8 @@ import img_portfolio from "../img/sec-proyectos/portfolio.jpg"
 import img_rps from "../img/sec-proyectos/ppt.jpg"
 import img_gifapp from "../img/sec-proyectos/gifapp.jpg"
 import img_aerolab from "../img/sec-proyectos/aerolab.jpg"
+import img_heroapp from "../img/sec-proyectos/heroapp.jpg"
+
 import { useEffect } from "react";
 import { PrCard } from "./proyectos/PrCard";
 
@@ -26,6 +28,26 @@ function Proyectos (props) {
         <div>
             <Section title="Proyectos">
 
+                <PrCard title="Hero App" 
+                description={
+                    <p>Base de datos de superhéroes.</p>
+                    }
+                image={img_heroapp}
+                tags={<>
+                    <Tag name="React" color="re"/>
+                    <Tag name="Sass" color="sass"/>
+                    <Tag name="Api"/> 
+                    <Tag name="React Context"/> 
+                    <Tag name="React Router"/> 
+                    <Tag name="Redux"/> 
+                    <Tag name="Firebase"/> 
+                    <Tag name="Framer motion"/> 
+                    </>}
+                links={<>
+                    <a href="https://heroapp-beige.vercel.app" className="demo" target="_blank">Demo</a>   
+                    <a href="https://github.com/AgMarcos5/heroapp" target="_blank">Ver en github</a>
+                   </>}
+                />
             
                 <PrCard title="Gif App" 
                 description={
@@ -38,6 +60,7 @@ function Proyectos (props) {
                     <Tag name="Api"/> 
                     <Tag name="React Context"/> 
                     <Tag name="React Router"/> 
+                    <Tag name="React testing library"/> 
                     </>}
                 links={<>
                     <a href="https://gifapp-psi.vercel.app" className="demo" target="_blank">Demo</a>   
