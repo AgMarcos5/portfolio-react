@@ -29,7 +29,7 @@ function Proyectos (props) {
         <div>
             <Section title="Proyectos">
 
-                <PrCard title="Hero App" 
+                <PrCard title="Poke App" 
                 description={
                     <p>Juego de Pokemon desarrollado como proyecto final de la Skill Factory de Avalith.</p>
                     }
